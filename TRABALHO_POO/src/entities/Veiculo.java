@@ -46,7 +46,5 @@ public abstract class  Veiculo {
 		this.valorDiaria = valorDiaria;
 	}
 	
-	public Double calcularValor(Integer dias) {
-		return valorDiaria * dias;
-	}
+	public abstract Double calcularValor(Integer dias);
 }

@@ -29,6 +29,13 @@ public class Locacao {
 		this.dias = dias;
 	}
 	
+	public double calcularTotal() {						//Calcula o valor total com 10% de desconto para 7 dias ou mais
+	    double valor = veiculo.calcularValor(dias);
+	    if (dias >= 7) {
+	        valor = valor * 0.9;
+	    }
+	    return valor;
+	}
 }
 	
 	

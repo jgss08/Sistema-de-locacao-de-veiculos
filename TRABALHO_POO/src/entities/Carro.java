@@ -16,5 +16,9 @@ public class Carro extends Veiculo{
 		this.portas = portas;
 	}
 	
+	@Override
+	public Double calcularValor(Integer dias) {
+	    return getValorDiaria() * dias;
+	}
 	
 }

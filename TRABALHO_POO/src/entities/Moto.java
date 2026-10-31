@@ -16,5 +16,9 @@ public class Moto extends Veiculo {
 		this.cilindradas = cilindradas;
 	}
 	
+	@Override
+	public Double calcularValor(Integer dias) {
+	    return getValorDiaria() * dias;
+	}
 	
 }

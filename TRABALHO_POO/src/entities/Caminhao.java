@@ -16,5 +16,9 @@ public class Caminhao extends Veiculo{
 		this.capacidadeKg = capacidadeKg;
 	}
 	
+	@Override
+	public Double calcularValor(Integer dias) {
+	    return getValorDiaria() * dias;
+	}
 	
 }
